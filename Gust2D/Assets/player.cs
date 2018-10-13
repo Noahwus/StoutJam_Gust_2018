@@ -10,6 +10,12 @@ public class player : MonoBehaviour {
 		Vector3 pos = transform.position;
 		pos.z = 1;
 		transform.position = pos;
+
+//		{
+//			Vector3 targetPosition = Camera.main.gameObject.transform.position;
+//			transform.LookAt (targetPosition);
+//		}
+
 		Quaternion.Euler(new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0));
 	}
 }
