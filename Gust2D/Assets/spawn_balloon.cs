@@ -5,7 +5,7 @@ using UnityEngine;
 public class spawn_balloon : MonoBehaviour
 {
     public GameObject balloon;
-    public float coolDownTime = 5.0f;
+    public float coolDownTime = .7f;
     public float timeStamp = 0.0f;
     public float timeTilBoom = 3.0f;
    

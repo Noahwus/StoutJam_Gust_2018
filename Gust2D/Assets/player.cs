@@ -16,6 +16,6 @@ public class player : MonoBehaviour {
 //			transform.LookAt (targetPosition);
 //		}
 
-		Quaternion.Euler(new Vector3(transform.eulerAngles.x, 0, 0));
+		Quaternion.Euler(new Vector3(0, 0, transform.eulerAngles.z));
 	}
 }

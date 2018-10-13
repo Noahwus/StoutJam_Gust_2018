@@ -6,11 +6,11 @@ public class Sprite : MonoBehaviour {
 	public GameObject Cap;
 	void FixedUpdate(){
 
-//		Vector3 pos = Cap.transform.position;
-//
-//		pos.z = -1;
-//		pos
-//		transform.position = pos;
+		Vector3 pos = Cap.transform.position;
+
+		pos.z = pos.z;
+		//pos.y = Cap.transform.position.y;
+		transform.position = pos;
 
 		//		{
 		//			Vector3 targetPosition = Camera.main.gameObject.transform.position;
