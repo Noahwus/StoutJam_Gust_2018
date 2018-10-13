@@ -6,9 +6,9 @@ public class balloon_pop : MonoBehaviour
 {
 
     public GameObject balloon;
-    public float power = 1500.0f;
-    public float radius = 50.0f;
-    public float upforce = 500.0f;
+    public float power = 20.0f;
+    public float radius = 5.0f;
+    public float upforce = 2.0f;
 
 	int delay = 2;
 
@@ -31,7 +31,7 @@ public class balloon_pop : MonoBehaviour
             if (rb != null)
             {
                 rb.AddExplosionForce(power, popPosition, radius, upforce, ForceMode.Impulse);
-				Destroy (balloon);
+                Destroy(balloon);
             }
         }
     }

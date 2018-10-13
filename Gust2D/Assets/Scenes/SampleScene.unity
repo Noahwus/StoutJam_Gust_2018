@@ -661,6 +661,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   balloon: {fileID: 1629578003}
+  coolDownTime: 0.75
+  timeStamp: 0
+  timeTilBoom: 3
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -3108,7 +3111,7 @@ GameObject:
   - component: {fileID: 1771427235}
   - component: {fileID: 1771427236}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
