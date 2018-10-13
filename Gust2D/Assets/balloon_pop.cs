@@ -6,25 +6,18 @@ public class balloon_pop : MonoBehaviour
 {
 
     public GameObject balloon;
-    public float power = 10.0f;
-    public float radius = 5.0f;
-    public float upforce = 1.0f;
+    public float power = 1500.0f;
+    public float radius = 50.0f;
+    public float upforce = 500.0f;
 
-    // Use this for initialization
-    void Start()
-    {
+	int delay = 2;
 
-    }
-
-    // Update is called once per frame
     void FixedUpdate()
     {
-
         if (balloon == enabled)
         {
             Invoke("Pop", 1);
         }
-
     }
 
     void Pop()
@@ -38,6 +31,7 @@ public class balloon_pop : MonoBehaviour
             if (rb != null)
             {
                 rb.AddExplosionForce(power, popPosition, radius, upforce, ForceMode.Impulse);
+				Destroy (balloon);
             }
         }
     }

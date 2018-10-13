@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class player : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
 	// Update is called once per frame
 	void Update () {
 		Vector3 pos = transform.position;
 		pos.z = 1;
 		transform.position = pos;
+		Quaternion.Euler(new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0));
 	}
 }
