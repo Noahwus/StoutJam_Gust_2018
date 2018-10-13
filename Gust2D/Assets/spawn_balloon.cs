@@ -22,7 +22,7 @@ public class spawn_balloon : MonoBehaviour
 				GameObject objectInstance = Instantiate (balloon, spawnPosition, Quaternion.identity);
 				Quaternion.Euler(new Vector3(0, 0, 0));
 
-				Debug.Log (spawn);
+				Debug.Log (spawnPosition);
 			}
 				
 
