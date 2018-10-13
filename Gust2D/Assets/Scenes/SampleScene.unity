@@ -1059,7 +1059,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move_speed: 5
-  track_movement: 0
   furtherest_right: 20
   furtherest_left: 16
   move_right: 1
@@ -3108,7 +3107,6 @@ GameObject:
   - component: {fileID: 1771427231}
   - component: {fileID: 1771427235}
   - component: {fileID: 1771427236}
-  - component: {fileID: 1771427237}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -3209,17 +3207,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd5598e9b2ec9954ebbdbd23cd8a2196, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1771427237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1771427230}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b41b0af4a8de2a459b1ac5549bbb223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1869689120
