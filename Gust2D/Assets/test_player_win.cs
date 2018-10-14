@@ -14,11 +14,14 @@ public class test_player_win : MonoBehaviour {
 		
 	}
 
-    void OnTriggerEnter (Collider other)
+    void OnCollisionEnter (Collision col)
     {
-        Debug.Log("I won");
-        int i = Application.loadedLevel;
-        Application.LoadLevel(i);
+        if (col.gameObject.tag == "win")
+        {
+            Debug.Log("I won");
+            int i = Application.loadedLevel;
+            Application.LoadLevel(i);
+        }
     }
 
 }
