@@ -6,6 +6,7 @@ TagManager:
   tags:
   - win
   - bouncy
+  - thump
   layers:
   - Default
   - TransparentFX

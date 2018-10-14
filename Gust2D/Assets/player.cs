@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class player : MonoBehaviour {
 
+    public AudioSource soundSourceP;
 
-	
-	// Update is called once per frame
-	void Update () {
+    void Start()
+    {
+        soundSourceP = GetComponent<AudioSource>();
+    }
+
+    // Update is called once per frame
+    void Update () {
 		Vector3 pos = transform.position;
 		pos.z = 1;
 		transform.position = pos;
@@ -19,4 +24,13 @@ public class player : MonoBehaviour {
 
 		Quaternion.Euler(new Vector3(0, 0, transform.eulerAngles.z));
 	}
+
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "thump")
+        {
+            soundSourceP.Play();
+        }
+    }
+
 }
