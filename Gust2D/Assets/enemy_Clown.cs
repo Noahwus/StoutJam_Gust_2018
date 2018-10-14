@@ -36,10 +36,14 @@ public class enemy_Clown : MonoBehaviour {
 
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision col)
     {
-        int i = Application.loadedLevel;
-        Application.LoadLevel(i);
+        if (col.gameObject.tag == "win")
+        {
+            Debug.Log("I was attacked by a clown!");
+            int i = Application.loadedLevel;
+            Application.LoadLevel(i);
+        }
     }
 
 }
