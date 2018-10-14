@@ -20,7 +20,7 @@ public class test_player_win : MonoBehaviour {
         {
             Debug.Log("I won");
             int i = Application.loadedLevel;
-            Application.LoadLevel(i);
+            Application.LoadLevel(i + 1);
         }
     }
 
