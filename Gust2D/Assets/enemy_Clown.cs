@@ -5,8 +5,8 @@ using UnityEngine;
 public class enemy_Clown : MonoBehaviour {
 
     public float move_speed = 2.0f;
-    public int furtherest_right = 20;
-    public int furtherest_left = 16;
+    public float furtherest_right = 20f;
+    public float furtherest_left = 16f;
     public bool move_right = true;
 
 	// Use this for initialization
@@ -24,6 +24,7 @@ public class enemy_Clown : MonoBehaviour {
             {
                 move_right = false;
             }
+
         }
         else if (!move_right)
         {
