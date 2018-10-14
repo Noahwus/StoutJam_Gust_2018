@@ -12,6 +12,14 @@ public class balloon_pop : MonoBehaviour
 
 	int delay = 2;
 
+    public AudioSource soundSource;
+
+    void Start()
+    {
+        soundSource = GetComponent<AudioSource>();
+        soundSource.Play();
+    }
+
     void FixedUpdate()
     {
         if (balloon == enabled)

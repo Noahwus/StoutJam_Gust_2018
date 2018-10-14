@@ -7,7 +7,7 @@ public class spawn_balloon : MonoBehaviour
     public GameObject balloon;
     public float coolDownTime = .7f;
     public float timeStamp = 0.0f;
-    public float timeTilBoom = 3.0f;
+    public float timeTilBoom = 1.1f;
    
     // Update is called once per frame
     void Update()
