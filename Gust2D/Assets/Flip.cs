@@ -9,15 +9,17 @@ public class Flip : MonoBehaviour {
 	Vector3 prev;
 	public bool fliped = false;
 
+
 	void Update () {
 		Vector3 curr = Capsule.transform.position;
 		Vector3 temp = transform.localScale;
 
 		if (prev.x < curr.x) {
-			temp.x *= 1f;
+			temp.x = -2f;
 			fliped = false;
+
 		} else if(!fliped) {
-			temp.x *= -1f;
+			temp.x = 2f;
 			fliped = true;
 		}
 
