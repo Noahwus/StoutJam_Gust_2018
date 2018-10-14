@@ -2016,7 +2016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 832428567}
-  LookAt: 0
+  LookAt: 1
   smoothSpeed: 0.08
   offset: {x: 0, y: 0, z: 0}
 --- !u!1 &545172032
