@@ -5,24 +5,23 @@ using UnityEngine;
 public class CreditsButton : MonoBehaviour {
 
 
-//	private SpriteRenderer spriteR;
-//	public Sprite spr;
-//	
-//
-//	void Start () {
-//		spriteR = gameObject.GetComponent<SpriteRenderer> ();
-//	}
-//	
-//	// Update is called once per frame
-//	void Update () {
-//		
-//	}
-//
-//	void OnCollisionEnter (Collision col)
-//	{
-//		if (col.gameObject.tag == "win")
-//		{
-//			spriteR.sprite = spr;
-//		}
-//	}
+	public GameObject Credits;
+	
+
+	void Start () {
+		Vector3 point = transform.position;	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+
+	void OnCollisionEnter (Collision col)
+	{
+		if (col.gameObject.tag == "win")
+		{
+			//Instantiate (Credits, point);	
+		}
+	}
 }
