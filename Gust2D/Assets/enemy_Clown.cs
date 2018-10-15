@@ -8,6 +8,7 @@ public class enemy_Clown : MonoBehaviour {
     public float furtherest_right = 20f;
     public float furtherest_left = 16f;
     public bool move_right = true;
+	public bool canKill = true;
 
 	// Use this for initialization
 	void Start () {
@@ -39,9 +40,9 @@ public class enemy_Clown : MonoBehaviour {
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "win")
+		if (col.gameObject.tag == "win" && canKill)
         {
-            Debug.Log("I was attacked by a clown!");
+            //Debug.Log("I was attacked by a clown!");
             int i = Application.loadedLevel;
             Application.LoadLevel(i);
         }

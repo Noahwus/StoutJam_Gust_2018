@@ -6,10 +6,14 @@ public class CreditsButton : MonoBehaviour {
 
 
 	public GameObject Credits;
-	
+	//public Sprite []creditS;
+	 GameObject creditsInst;
+	public Vector3 Placement;
+
 
 	void Start () {
 		Vector3 point = transform.position;	
+		//GetComponent<SpriteRenderer>().sprite
 	}
 	
 	// Update is called once per frame
@@ -21,7 +25,7 @@ public class CreditsButton : MonoBehaviour {
 	{
 		if (col.gameObject.tag == "win")
 		{
-			//Instantiate (Credits, point);	
+			//creditsInst = Instantiate(Credits, point);
 		}
 	}
 }
